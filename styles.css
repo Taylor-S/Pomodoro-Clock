@@ -6,6 +6,16 @@ body{
     color: #f8e5ee
 }
 
+.overlay {
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #E5D352;
+}
+
 .underlay{
     width: 100vw;
     height: 100%;
