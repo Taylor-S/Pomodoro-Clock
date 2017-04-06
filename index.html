@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pomodoro Clock</title>
+        <link rel="stylesheet" href="styles.css" media="screen" title="no title">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="instructions">
+            <h1>There are six steps in the technique</h1>
+            <div class="content">
+                <p>1.) Decide on the task to be done.</p>
+                <p>2.) Set the pomodoro timer (traditionally to 25 minutes).</p>
+                <p>3.) Work on the task until the timer rings.</p>
+                <p>4.) After the timer rings, a checkmark is given.</p>
+                <p>5.) If you have fewer than four checkmarks, take a short break (3–5 minutes), then go to step 2.</p>
+                <p>6.) After four pomodoros, take a longer break (15–30 minutes), checkmarks are reset to zero, go to step 1.</p>
+            </div>
+        </div>
+        <div class="tab">
+            <p>Learn The Pomodoro Technique</p>
+        </div>
+
+        <div class="underlay"></div>
+
+
+
+
+
+
+        <div class="clockBod">
+            <div class="secondColour"></div>
+            <div class="clockCont">
+                <div class="headings">
+                    <h2>BREAK</h2>
+                    <h2 class="mainHead">POMODORO</h2>
+                    <h2>SESSION</h2>
+                </div>
+
+                <div class="buttonCont">
+                    <div class="plus plusBreak button noselect">+</div>
+                    <div class="minus minusBreak button noselect">-</div>
+                </div>
+
+                <div class="break">
+                    <p class="breakTime">5</p>
+                </div>
+
+                <div class="timeBox timeType">
+                    <h2>TIME</h2>
+                    <p class="time"></p>
+                </div>
+
+
+                <div class="study">
+                    <p class="studyTime">25</p>
+                </div>
+
+
+                <div class="buttonCont">
+                    <div class="plus plusStudy button noselect">+</div>
+                    <div class="minus minusStudy button noselect">-</div>
+                </div>
+            </div>
+
+            <div class="checkCont">
+                <div>
+                    <div class="check check1"></div>
+                    <div class="check check2"></div>
+                </div>
+                <div class="speaker">
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
+                </div>
+                <div>
+                    <div class="check check3"></div>
+                    <div class="check check4"></div>
+                </div>
+            </div>
+
+
+            <div class="toggle active">
+            <p class = "start">START</p>
+            <p class = "pause">PAUSE</p>
+        </div>
+        <div class="resetButton">
+        <p class = "reset">RESET</p>
+    </div>
+    <div class="secondColour2"></div>
+        </div>
+
+
+<!-- mobile version ------------------------------------------------------------------------------->
+
+        <div class="mobile">
+            <div class="container">
+                <div class="row">
+
+                    <div class="breakCtrl">
+                        <p>BREAK</p>
+                        <div class="btnCont noselect">
+                            <div class="plus plusBreak">+</div>
+                            <div class="minus minusBreak">-</div>
+                        </div>
+                        <div class="numBox">
+                            <p class="breakTime">5</p>
+                        </div>
+
+                    </div>
+
+                    <div class="timer">
+                        <h2 class="mainHead">POMODORO</h2>
+                        <div class="timeType">
+                            <h2>TIME</h2>
+                            <p class="time"></p>
+                        </div>
+
+                    </div>
+
+                    <div class="sessionCtrl">
+                        <p>SESSION</p>
+                        <div class="numBox">
+                            <p class="studyTime">25</p>
+                        </div>
+                        <div class="btnCont noselect">
+                            <div class="plus plusStudy">+</div>
+                            <div class="minus minusStudy">-</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="check check1"></div>
+                    <div class="check check2"></div>
+                    <div class="check check3"></div>
+                    <div class="check check4"></div>
+                </div>
+
+                <div class="row">
+                    <div class="toggle active">
+                        <p class = "start">START</p>
+                        <p class = "pause">PAUSE</p>
+                    </div>
+                    <div class="resetButton">
+                        <p class = "reset">RESET</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script
+        	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+        	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        	  crossorigin="anonymous"></script>
+              <script src="tab.js" charset="utf-8"></script>
+        <script src="buttons.js" charset="utf-8"></script>
+        <script src="pomodoro.js" charset="utf-8"></script>
+    </body>
+</html>
